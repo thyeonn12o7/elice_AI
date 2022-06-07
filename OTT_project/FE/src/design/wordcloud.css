@@ -1,0 +1,46 @@
+.tag-cloud {
+  flex: 1;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  max-height: 360px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.tag-cloud > div {
+  transition: all 1.5s;
+}
+
+/* <div className="tag-item-wrapper">
+<div>Hover Me Please!</div>
+<div className="tag-item-tooltip">HOVERED!</div>
+</div> */
+
+.tag-item-wrapper {
+  cursor: pointer;
+}
+
+.tag-item-wrapper:hover {
+  z-index: 100;
+}
+
+.tag-item-wrapper:hover .tag-item-tooltip {
+  display: block;
+}
+
+.tag-item-tooltip {
+  background: #c13f3c;
+  color: white;
+  margin-top: 5px;
+  z-index: 100;
+  display: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  line-height: 1;
+  position: absolute;
+  min-width: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}

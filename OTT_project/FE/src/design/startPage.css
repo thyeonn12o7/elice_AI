@@ -1,0 +1,79 @@
+#chart {
+  margin: 0 auto;
+  margin-bottom: -20px;
+}
+
+#chart-title {
+  font-family: "KOTRALEAP";
+  margin: 0 auto;
+  text-align: center;
+  /* margin-bottom: -40px; */
+}
+
+#chart-description {
+  font-size: 0.9rem;
+  font-family: "paybooc-Medium";
+  margin: 0 auto;
+  text-align: center;
+  line-height: 160%;
+  /* 반응형으로 제작시 break-all로 바꿔야함 */
+  word-break: keep-all;
+  width: 105%;
+}
+
+.home-main-title {
+  word-break: keep-all;
+  text-align: center;
+}
+
+#page5 {
+  margin: 1rem;
+}
+
+#next-btn {
+  border: none;
+  width: 20rem;
+  height: 3rem;
+  background-color: #e0d3d3;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  /* color: white; */
+}
+
+#last-btn {
+  margin-top: 1.5rem;
+}
+
+.next {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.next :hover {
+  box-shadow: 0px 10px 28px -4px #a27979;
+  font-weight: bold;
+}
+
+#next-btn a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: black;
+}
+
+#next-btn :active {
+  text-decoration: none;
+}
+
+#last-description {
+  font-size: 1.5rem;
+  text-align: center;
+  word-break: keep-all;
+}
+
+body {
+  background-color: #f9f9f9;
+  padding-bottom: 60px;
+}

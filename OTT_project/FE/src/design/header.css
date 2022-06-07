@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  font-family: "Cafe24SsurroundAir";
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  position: flex;
+}
+
+#headers {
+  display: flex;
+  margin: 10px;
+  padding: 1.2rem;
+
+  justify-content: space-between;
+}
+
+#service-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Vitro_core";
+}
+
+#service-name a {
+  text-decoration: none;
+  color: black;
+}
+#service-name a :hover {
+  text-decoration: underline;
+}
+#service-name a :link {
+  text-decoration: none;
+}
+
+a :visited {
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: black;
+  text-decoration: none;
+}
+
+.navigator {
+  margin: 5px;
+  margin-right: 10px;
+}
+
+#menu-btn:hover {
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+}
+
+#login-btn {
+  margin-right: 2rem;
+
+  display: inline;
+}
+
+#login-btn :hover {
+  color: #e06666;
+  border-bottom: solid 3px #ea2129;
+}
+
+#menu-btn {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  position: fixed;
+  right: 15px;
+  z-index: 100;
+}
+
+.menu {
+  display: block;
+  margin-top: 5px;
+  position: fixed;
+  z-index: 100;
+  right: 45px;
+  top: 50px;
+}
+
+#drop-menu {
+  color: #e06666;
+  border-radius: 0.4rem;
+  padding: 10px 20px 10px 10px;
+  font-weight: bold;
+
+  text-align: center;
+}
+.menu :hover {
+  background-color: #fbefef;
+  font-weight: bold;
+  color: bule;
+}
+
+#drop-menu a {
+  text-decoration-line: none;
+  color: #e06666;
+}
+
+.user-login-info {
+  margin-right: 2rem;
+}

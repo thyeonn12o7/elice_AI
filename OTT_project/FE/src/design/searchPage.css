@@ -1,0 +1,161 @@
+#hashtag-title {
+  text-align: center;
+  margin: 0 auto;
+  /* margin-bottom: 1rem; */
+  font-family: SBAggroM;
+}
+
+/* 그리드 레이아웃 고치기
+1. 창이 줄어들면 자동으로 화면이 줄어들어서 카테고리와 해시태그 박스가 겹쳐짐
+2. 비디오 보이는 부분 크기 고정하고, 창 줄어들면 반응형으로 세로정렬하기 */
+.thirdpage-main {
+  display: grid;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 1rem;
+  justify-items: center;
+  margin-bottom: 15px;
+  margin: 0 auto;
+
+  grid-template-areas:
+    " category-box category-box category-box "
+    " hashtag-box hashtag-box hashtag-box ";
+}
+
+.category-box {
+  margin: 0 0.2rem 0.2rem 0.2rem;
+  padding: 0.2rem 0.2rem 0 0.2rem;
+
+  width: 100%;
+  height: 100px;
+  grid-area: category-box;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.category-box-button {
+  background-color: #fffefe;
+  border: solid #c8c3c4 0.5px;
+  font-size: 0.7rem;
+}
+
+.hashtag-box {
+  grid-area: hashtag-box;
+  background-color: #fbf4f5;
+  height: 160px;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hastag-box-subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hastag-box-subtitle p {
+  margin: 5px 0 5px 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#hashtag-btn {
+  border: none;
+  background-color: #fffefe;
+  border: solid #d2b3b3;
+  border-radius: 0.8rem;
+  margin: 5px 2px 2px 10px;
+  height: 2rem;
+  z-index: 100;
+}
+
+#hastag-refresh-btn {
+  margin-left: 1rem;
+}
+
+.video-div {
+  margin: 0 auto;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 325px); */
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+.video-wrapped-btn {
+  padding: 10px;
+  background-color: rgba(251, 244, 245, 0.6);
+  border-radius: 1rem;
+}
+
+.video-wrapped-btn:hover {
+  background-color: rgba(210, 179, 179, 0.5);
+  text-decoration: none;
+  color: black;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#video-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: -1rem;
+}
+
+#video-channel,
+#video-category {
+  font-size: 1rem;
+  margin-bottom: -1rem;
+}
+
+#video-views-p,
+#video-likes-p {
+  font-size: 0.9rem;
+  margin-bottom: -1rem;
+}
+
+#video-div-div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+#video-title {
+  text-align: center;
+  width: 100%;
+  word-break: break-all;
+}
+
+.video-views-likes {
+  display: flex;
+  justify-content: center;
+}
+
+.video-views-div {
+  display: flex;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.bootstrap-pagination-bar {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.bootstrap-pagination-bar li.active a {
+  color: #fff !important;
+  background: #d2b3b3 !important;
+  border-color: #d2b3b3 !important;
+}
+.bootstrap-pagination-bar li a:hover {
+  color: #fff !important;
+  background: rgba(210, 179, 179, 0.5) !important;
+}
+.bootstrap-pagination-bar li a:focus {
+  box-shadow: none !important;
+}
